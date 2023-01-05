@@ -15,3 +15,7 @@ sample = [[2,2,2,2]]
 pred = c_knn.predict(sample)
 pred_v = [iris.target_names[p] for p in pred]
 print(pred_v)
+
+
+from sklearn.metrics import accuracy_score
+print("Accuracy : ",accuracy_score(y_test,y_pred))
